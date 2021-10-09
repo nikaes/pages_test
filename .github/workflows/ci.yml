@@ -26,13 +26,9 @@ jobs:
 
       - name: Build-x86
         run: |
-          ver
+          cd /d "C:\Program Files (x86)"
           dir
-          cd "C:\Program Files (x86)"
-          dir
-          cd .github
-          dir
-          type %0
+          whereis msbuild
         #    "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe" libPcapNgParser.sln  /p:configuration=Release /p:Platform=x86
         shell: cmd
 
