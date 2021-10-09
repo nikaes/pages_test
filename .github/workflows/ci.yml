@@ -30,6 +30,8 @@ jobs:
           dir
           cd "C:\Program Files (x86)"
           dir
+          cd .github
+          dir
           type %0
         #    "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe" libPcapNgParser.sln  /p:configuration=Release /p:Platform=x86
         shell: cmd
