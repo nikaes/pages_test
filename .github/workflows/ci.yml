@@ -25,12 +25,10 @@ jobs:
         #  vswhere-path: C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe
 
       - name: Build-x86
-        with: 
-        #  cmd: msbuild libPcapNgParser.sln  /p:configuration=Release /p:Platform=x86
-          cmd: |
-            echo xx
-            echo %0
-            type %0
-            echo yy
+        run: |
+          echo xx
+          echo %0
+          type %0
+          echo yy
         #    "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe" libPcapNgParser.sln  /p:configuration=Release /p:Platform=x86
             
