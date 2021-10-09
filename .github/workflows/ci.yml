@@ -26,10 +26,10 @@ jobs:
 
       - name: Build-x86
         run: |
-          echo xx
-          echo %0
-          type %0
-          echo yy
+          @echo on
+          dir
+          cd "C:\Program Files (x86)"
+          dir
         #    "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe" libPcapNgParser.sln  /p:configuration=Release /p:Platform=x86
         shell: cmd
 
