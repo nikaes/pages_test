@@ -34,6 +34,7 @@ jobs:
       - name: Build-x86
         run: |
           call %MSBUILDEXE% aaa.sln
+        shell: cmd
         #    "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe" libPcapNgParser.sln  /p:configuration=Release /p:Platform=x86
 
       #- name: Build-x86
